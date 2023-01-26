@@ -13,7 +13,7 @@
 	
 	function buttonEventFirst(B) {
 		B = Number(B)
-		inp.textContent += B;
+		inp.textContent += 100;
 		firstEqual += B 
 	}
 	function buttonEventLast(B) {
