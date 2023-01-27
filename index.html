@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+			body{ background:#1a1a1a; 
+			font-family: 'Roboto', sans-serif;}
+
+			.Portfolio {
+			min-width: 320px;
+			display: grid;
+			grid-template-areas: 
+			"avatar aboutMe"
+			"avatar aboutMe_paragraph"
+			"avatar skills "
+			"avatar skills_paragraph"
+			"works works";
+			background: black;
+			margin: 0 20vh 0vh 20vh;
+
+
+			}
+			.works_and_cont{
+/*				min-width: 320px;*/
+				display: grid;
+				grid-template-areas: 
+				
+				"works_pararaph works_pararaph works_pararaph "
+				"contacts contacts contacts"
+				"contacts_paragraph contacts_paragraph contacts_paragraph";
+				margin: 0 20vh 0 20vh;
+				background: black;
+			}
+			.avatar{ 
+				grid-area: avatar;
+				width:30vh;
+				height:40vh;
+				margin: 5vh 5vh 5vh 5vh;
+				border: 1px solid;
+				border-radius: 30px;
+				 }
+			.text {
+				font-size: 2.5vh;
+				color: white;
+			}
+			
+			.headers{
+				
+
+				font-weight: bold;
+				font-size:  1.5vw;
+				font-family: 'Roboto', sans-serif;
+
+				padding: 1.5vh 5vh;
+				color: white;
+				border: 3px solid white;
+				border-radius: 50px;
+				text-align: center;
+				width: fit-content;
+				height: fit-content;
+			}
+			.aboutMe{
+				margin-top: 55px;
+				grid-area: aboutMe;
+				}
+
+			.aboutMe_paragraph{
+				grid-area: aboutMe_paragraph;
+				color: white;
+				width: fit-content;
+				height: fit-content;
+				
+			}
+			.skills{ 
+				grid-area: skills;
+			
+
+			}
+			.skills_paragraph{
+				grid-area: skills_paragraph;
+				display: grid;
+				width: fit-content;
+				;
+
+			}
+			.works{
+				padding-left:20vw ;
+				padding-right: 20vw;
+				grid-area: works;
+				color: white;
+				margin-left: 10vw;
+				font-size: 2vw;
+				align-self: center;
+			}
+			.works_pararaph{ 
+				grid-area: works_pararaph;
+				grid-template-areas: "calc snake  wishList"
+			}
+			
+			
+			.img{
+				margin-top:3vh ;
+				width: 30vh;
+				height: 40vh;
+				border: 1px solid black;
+				border-radius: 10px;
+
+			}
+			.calc{
+				grid-area: calc;
+				align-self: end;
+				width: 18vw;
+			}
+			.snake{
+				grid-area: snake;
+				width:22vw ;
+/*				height: 10vh;*/
+			}
+			.wishList{
+				grid-area: wishList;
+				width: 30vw;
+			}
+
+			.contacts{
+				grid-area: contacts;
+				color: white;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 2vh;
+				font-size: 3vh;
+				padding: 1vh 10vw 1vh 10vw;
+
+			}
+			.contacts_paragraph{
+				grid-area: contacts_paragraph;
+				text-align: center;
+				font-size: 2vw;
+				padding-bottom: 10vh;
+			}
+			@media (max-width: 1020px) {
+				
+				.Portfolio{ 
+					width: 100%;
+					min-width: 320px;
+					margin: 0;
+					display: grid;
+					grid-template-areas: 
+					"avatar" 
+					"aboutMe"
+					"aboutMe_paragraph"
+					"skills"
+					"skills_paragraph"
+					"works";
+					justify-items: center;
+/*					padding-left: 10vw;*/
+				}
+				.headers{
+				
+
+				font-weight: bold;
+				font-family: 'Roboto', sans-serif;
+
+				padding: 1.5vh 5vh;
+				color: white;
+				border: 3px solid white;
+				border-radius: 50px;
+				text-align: center;
+				width: fit-content;
+				height: fit-content;
+			}
+				.aboutMe_paragraph{
+				grid-area: aboutMe_paragraph;
+				color: white;
+				width: fit-content;
+				height: fit-content;
+				margin: 1vh 2vw 1vh 2vw ;
+				
+			}
+				.works_and_cont{
+					margin: 0;
+					width: 100%;
+					display: grid;
+					grid-template-areas: 
+					
+					"calc"
+					"snake"
+					"wishList"
+					"contacts"
+					"contacts_paragraph";
+					height: fit-content;
+					justify-items: center;
+
+
+			}
+		
+				 .skills_paragraph{
+				grid-area: skills_paragraph;
+				display: block;
+				width: fit-content;
+				
+
+			}
+
+			 	.avatar{
+				 	margin: 2vh 2vh 2vh 2vh;
+				 }
+			 	.aboutMe{
+				margin-top: 20px;
+				grid-area: aboutMe;
+				font-size: 4vw;
+				}
+				.aboutMe_paragraph{
+				grid-area: aboutMe_paragraph;
+				color: white;
+				width: fit-content;
+				height: fit-content;
+				padding-left: 2vw;
+				padding-right: 2vw;
+				
+				}
+				.skills{
+				font-size: 4vw;
+				}
+				.works{
+				grid-area: works;
+				color: white;
+				margin-left: 0;
+				margin-right: 0;
+				font-size: 3vh;
+				align-self: center;
+				}
+				.calc{
+				grid-area: calc;
+				margin-left: 4vw;
+				width: 90vw;
+				height: 615px;
+				max-width: 445px;
+				
+				}
+			
+				.snake{
+				grid-area: snake;
+				margin-left: 4vw;
+				width: 90vw;
+				height: 60vh;
+				max-width: 555px;
+				max-height: 615px;
+
+				}
+
+				.wishList{
+				grid-area: wishList;
+				height:60vh ;
+				width:80vw ;
+				margin-left: 10vw;
+				}
+					.contacts_paragraph{
+				grid-area: contacts_paragraph;
+				margin-right: 0;
+				padding-bottom: 20vh;
+				font-weight: bold;
+				text-align: center;
+				font-size: 4vh;
+				}
+				.contacts{
+				margin-top: 6vh;
+				grid-area: contacts;
+				margin-left: 0;
+				margin-right: 0vw;
+				font-size: 3vh;
+				}
+			}
+	</style>
+</head>
+<body>
+<div class="Portfolio">
+<img class = "avatar" src="img/photo_2023-01-26_18-05-33.jpg">
+<div class="aboutMe headers">ОБО МНЕ</div>
+<p class="aboutMe_paragraph text">Привет! Меня зовут Михаил я из Краснодара и я занимаюсь фронтендом.
+<br>И если тебе нужен простой одностраничный сайт или что посложнее то я определенно смогу этим заняться, конечно после того как обсудим и утвердим его макет </p>
+<div class="skills headers">НАВЫКИ</div>
+<p class="skills_paragraph text">Мои FrontEnd навыки:
+<br><strong>
+- HTML 5
+<br>- CSS 3
+<br>- JAVASCRIPT ES6+
+<br>- JQUERY</strong> </p>
+<div class="works headers">МОИ РАБОТЫ </div>
+</div>
+<div class="works_and_cont">
+
+	<div class="works_paragraph">
+	<a href="calc/index.html"><img class="calc img" src="img/calcimg.png"></a>
+	<a href="snake/index.html"><img class="snake img" src="img/snake.png"></a>
+	<a href="wishList/index.html"><img class="wishList img" src="img/wishList.png"></a> </div>
+	<div class="contacts headers"> КОНТАКТЫ</div>	
+	<p class="contacts_paragraph text"> +79528185355 <br> <br>MikhailFrontEnd@yandex.ru </p>
+</div>
+</body>
+</html>
